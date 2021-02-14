@@ -28,4 +28,4 @@ while (guess != number) {
 }
 
 // Number of guesse after right guess 
-alert('You are right! The number is ' + number + ' You guessed it with ' + numberOfGuesses + ' tries');
+alert('You are right! The number is ' + number + '. You guessed it with ' + numberOfGuesses + ' tries');
