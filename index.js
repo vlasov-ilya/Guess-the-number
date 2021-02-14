@@ -11,7 +11,6 @@ alert(name + ', I thought of a number from 1 to 100. Try to guess it off in the 
 
 //Call for number 1-100
 let number = random(100)
-
 // Call for window to input the guess
 let guess = prompt('What number i thinking abut?');
 let numberOfGuesses = 1;
@@ -19,12 +18,12 @@ let numberOfGuesses = 1;
 
 // Call for window untill number is guessed 
 while (guess != number) {
+  numberOfGuesses = numberOfGuesses + 1;
+
   if (guess > number) {
     guess = prompt('A lot, try again');
-    numberOfGuesses = numberOfGuesses + 1;
-  } if (guess < number) {
+  } else if (guess < number) {
     guess = prompt('A little, try again');
-    numberOfGuesses = numberOfGuesses + 1;
   }
 }
 
